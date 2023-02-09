@@ -1,0 +1,206 @@
+# Author: Lucas McFadden
+# The Truman Show Text Adventure Game
+# Based on the 1998 film "The Truman Show" Directed by Peter Weir
+
+
+# Create a reusable variable for when the user answers a prompt incorrectly
+def incorrect():
+    print("Incorrect answer. Please try again.")
+    input('<Press any key to restart>\n')
+
+# Constructing level 1
+def level_1():
+    print("""
+    You walk out the front door of your home to leave for work when you see your neighbor. Just like every 
+    other morning, they happily wave and say "Good morning, Truman", to which you always respond with a 
+    smile, "Good morning neighbors! And case I don't see ya, good afternoon, good evening, and goodnight!" As
+    you reach to open your car door, you are startled by the loud sound of shattering glass at the end of your
+    driveway. 
+          """)
+    input('<Press any key to continue>\n')
+    
+    print("Press 1 to inspect")
+    print("Press 2 to call city services to report a fallen street lamp")
+    
+    decision = input("> ")
+    
+    if decision == '1':
+        print("""
+        You run to the end of your driveway to discover a shattered stage light with writing on it that says, 
+        "Sirius (9 Canis Major)". As you try to process what just happened you ponder two quesions: Where did
+        this stage light come from and why is it referencing Sirius, the brightest star in the Canis Major 
+        Constellation? You look up to see that the nearest street lamp is perfectly intact.
+              """)
+        
+        
+    elif decision == '2':
+        incorrect()
+        
+        
+    else:
+        print("Invalid response. Please try again.\n")
+        input('<Press any key to restart>\n')
+        
+
+# Constructing level 2
+def level_2():
+    print("""
+    Frustrated and confused, you decide to call off from work and drive to the beach to gather your thoughts. 
+    As you begin to sit in the sand, you look over to your right and see your best friend Marlon sun tanning 
+    next to a cooler. You immediately run over and ask what he's doing here and he responds with, "Hey buddy! 
+    What a coincidence that we're both here at the same time? Anyways, I came here to relax and drink some beers.
+    Wanna join me?" The two of you proceed to relax, talk, and drink on the beach until sunset when Marlon decides
+    to go home. The conversation and good company was nice but you still can't stop thinking about what happened 
+    earlier.
+          """)
+    input('<Press any key to continue>\n')
+    
+    print("Press 1 to stay and think about the stage light incident")
+    print("Press 2 to drive home")
+
+    decision = input("> ")
+
+    if decision == '1':
+        print("""
+        It is now dark out and as you are sitting there in the sand, it begins to rain very hard. You quickly 
+        get up and start walking back to the parking lot when all the sudden it is no longer raining on you. 
+        You look back and there is only a small shower of rain directly on the spot where you were sitting! 
+        The rain then moves to where you are now standing and you run 5 paces to the right to then be followed 
+        again by the shower of rain. It isn't until another 5 seconds go by that an enormous rainstorm breaks 
+        out and the entire beach is flooded.
+              """)
+        
+    
+    elif decision == '2':
+        incorrect
+        
+        
+    else:
+        print("Invalid response. Please try again.\n")
+        input('<Press any key to restart>\n')
+        
+        
+# Constructing level 3        
+def level_3():
+    print("""
+    Due to the heavy downpour of rain and the fact that you are under the influence of alcohol, you decide to 
+    take a taxi home. The next day, you wake up troubled with the thought of how that rain could have possibly 
+    fallen in such a mysterious way. Something is very wrong. You remember that you left your car at the beach 
+    parking lot so you decide to walk there. As you try to ratioanalize what happened last night during the walk, 
+    you convince yourself that freak things happen. No, there's no logical explanation for recent events but 
+    sometimes that's just how things are. As you approach the main square of the town, you notice a homeless man 
+    staring at you. You try to avoid eye contact so as not to invite him to beg for money but after another quick 
+    glance you cannot believe what you see. It's your father! He's alive! This is impossible!
+          """)
+    input('<Press any key to continue>\n')
+    
+    print("Press 1 to ignore. There is no way it's him")
+    print("Press 2 to approach him and get a closer look")
+    
+    decision = input("> ")
+    
+    if decision == '1':
+        incorrect()
+        
+        
+    elif decision == '2':
+        print("""
+        You slowly approach the homeless man while maintaining eye contact. He has a long, gray beard and he's 
+        wearing a baseball cap, both of which seem to be hiding what you believe to be your father's distinct 
+        facial features. He stands up without breaking eye contact and just as you see him begin to smile, two
+        businessmen grab him by the arms and begin forcing him to walk towards the street. You yell at them to 
+        stop but more civillians join the businessmen in escorting the homeless man while simultaneously pushing
+        you away. A bus pulls up to the side of the road and the homeless man is immediately thrown into it, the 
+        doors are closed and the bus drives away in a hurry. Before you even have the chance to ask what is going
+        on, everyone who was involved in this scuffle walks away and goes right back to what they were doing. 
+              """)
+        
+        
+    else:
+        print("Invalid response. Please try again.\n")
+        input('<Press any key to restart>\n')
+        
+        
+def level_4():
+    print("""
+    You've had enough. You are positive that the homeless man you saw was your father and everyone escorting him
+    away from you would have to mean that they knew and were purposely keeping him away from you. Clearly some-
+    thing is going on and everyone around you seems to be in on it. You decide it is finally time for you to 
+    escape the city you have been so afraid of leaving your entire life. You are still deathly afraid of water
+    so sailing is off the table. This leaves only one option: you must drive over the bridge that serves as the
+    only road between your island town and the rest of the country. You pack some essential supplies and begin 
+    to drive towards the bridge. You can see the bridge only 5 blocks away when all of the sudden, in perfect
+    synchronicity, a car from each perpendicular road turns onto the road in front of you and they all come to 
+    a screeching halt. 
+          """)
+    
+    input('<Press any key to continue>\n')
+    
+    print("Press 1 to get out of your car and see what's going on")
+    print("Press 2 to give up")
+    
+    decision = input("> ")
+    
+    if decision == '1':
+        print("""
+        You angrily run to the front of the line of cars to see that the middle part of the bridge has collapsed
+        into the water. The woman in the car at the front of the line rolls down her window and says, "That was
+        terrifying! I was about to cross over the bridge when it collapsed! Thank goodness I slammed on my 
+        breaks." You tell her that you're glad she's okay and she responds with "Thank you, Truman."
+              """)
+        
+    elif decision == '2':
+        incorrect()
+    
+    else:
+        print("Invalid response. Please try again.\n")
+        input('<Press any key to restart>\n')
+        
+def level_5():
+    print("""
+    That was the last straw. You had never seen that woman before in your life and she knew you by name. You 
+    have to escape this town even if it means conquering your biggest fear: sailing away at sea. At this point
+    you have concluded that whoever has organized this evil plan of keeping you on the island can see you at 
+    all times. This is the only way they could have known you were driving to the bridge to escape. You plan
+    to sneak out at midnight after setting up a decoy body in your bed to avoid suspicion. Midnight hits and 
+    you sneak out your backyard window and make your way to the marina where you untie a sailboat from the dock
+    and depart into the sea. Now that you know that your father's passing was a lie, you find the strength to 
+    see the beauty in being on the water. After a few hours at sea, the waves abruptly become gargantuan. They 
+    become larger than the boat and come crashing over you. Whoever has been watching you can also control the 
+    weather??? You know that this is their last, desperate attempt to keep you from leaving. You must choose to
+    either turn back and suffer the consequences or risk your life by continuing on your journey. 
+          """)
+    
+    input('<Press any key to continue>\n')
+    
+    print("Press 1 to give up and turn around")
+    print("Press 2 to tie yourself to the boat as your final stand")
+    
+    decision = input("> ")
+    
+    if decision == '1':
+        print("""
+        As soon as you turn the boat around, the waves subside and you see a motorized boat with a coast guard 
+        logo on it approaching you from the distance. They bring you aboard and tow you and your sailboat back 
+        to shore where the whole town is there to celebrate your return. You feel lucky to be alive but you are 
+        now back to this evil place living the same nightare all over again...
+              """)
+        
+    elif decision == '2':
+        print("""
+        The waves keep getting bigger and bigger, as if someone is intentionally trying to capsize your boat. You
+        never learned to swim due to your fear of water so you know that if you go overboard you will die. You 
+        have decided that you would rather die now as a free man than go back to that town as someone else's 
+        puppet. Just as you begin to lose hope, the waves subside and the sky becomes clear again. You do not 
+        know why this evil god has changed their mind and spared you but you are safely on your way to the open
+        ocean. Just as you sit down to relax again, the boat comes to an abrupt stop. You look forward to see 
+        the masthead of the ship has penetrated a wall that has been painted to look like the sky. You get off 
+        the ship and follow the narrow floor along the wall, up the blue and white stairs and see a door that 
+        appears to lead to total darkness. This is finally your opportunity to escape. You know deep down that 
+        the person watching over you your whole life is still watching so as a final statement, you turn around
+        and say: "Well in case I don't see ya, good afternoon, good evening, and goodnight". You take a bow and 
+        walk through the door. You are free.
+              """)
+        
+        
+        
